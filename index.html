@@ -365,6 +365,14 @@
             color: #888;
             margin-bottom: 28px;
         }
+        .awards-group { margin-bottom: 34px; }
+        .awards-group:last-child { margin-bottom: 0; }
+        .awards-group-title {
+            font-family: 'Bobby Jones', cursive;
+            font-size: 1.05rem;
+            color: #333;
+            margin-bottom: 14px;
+        }
         .laurels-row {
             display: flex;
             flex-wrap: wrap;
@@ -594,77 +602,132 @@
         </div>
     </div>
 
+    <!-- LAUREL WREATH SPRITE (defined once, reused via <use>) -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <g id="wreath" fill="#b1862f">
+                <g>
+                    <path d="M110,122 C80,114 64,90 66,64 C67,44 78,26 98,14" fill="none" stroke="#b1862f" stroke-width="2.4" stroke-linecap="round"/>
+                    <ellipse cx="102" cy="116" rx="8" ry="2.8" transform="rotate(34 102 116)"/>
+                    <ellipse cx="92" cy="106" rx="8.5" ry="3" transform="rotate(22 92 106)"/>
+                    <ellipse cx="83" cy="95" rx="9" ry="3" transform="rotate(8 83 95)"/>
+                    <ellipse cx="75" cy="82" rx="9" ry="3" transform="rotate(-8 75 82)"/>
+                    <ellipse cx="69" cy="68" rx="8.5" ry="3" transform="rotate(-26 69 68)"/>
+                    <ellipse cx="68" cy="53" rx="8" ry="2.8" transform="rotate(-44 68 53)"/>
+                    <ellipse cx="73" cy="38" rx="7.5" ry="2.6" transform="rotate(-60 73 38)"/>
+                    <ellipse cx="83" cy="25" rx="7" ry="2.4" transform="rotate(-72 83 25)"/>
+                </g>
+                <g transform="translate(220,0) scale(-1,1)">
+                    <path d="M110,122 C80,114 64,90 66,64 C67,44 78,26 98,14" fill="none" stroke="#b1862f" stroke-width="2.4" stroke-linecap="round"/>
+                    <ellipse cx="102" cy="116" rx="8" ry="2.8" transform="rotate(34 102 116)"/>
+                    <ellipse cx="92" cy="106" rx="8.5" ry="3" transform="rotate(22 92 106)"/>
+                    <ellipse cx="83" cy="95" rx="9" ry="3" transform="rotate(8 83 95)"/>
+                    <ellipse cx="75" cy="82" rx="9" ry="3" transform="rotate(-8 75 82)"/>
+                    <ellipse cx="69" cy="68" rx="8.5" ry="3" transform="rotate(-26 69 68)"/>
+                    <ellipse cx="68" cy="53" rx="8" ry="2.8" transform="rotate(-44 68 53)"/>
+                    <ellipse cx="73" cy="38" rx="7.5" ry="2.6" transform="rotate(-60 73 38)"/>
+                    <ellipse cx="83" cy="25" rx="7" ry="2.4" transform="rotate(-72 83 25)"/>
+                </g>
+            </g>
+        </defs>
+    </svg>
+
     <!-- AWARDS -->
     <div class="awards-section">
         <h2 class="awards-heading"><span>Awards</span></h2>
-        <p class="awards-sub">Low Power Mode</p>
-        <div class="laurels-row">
-            <div class="laurel">
-                <svg viewBox="0 0 220 130" aria-hidden="true">
-                    <g fill="#b1862f">
-                        <g>
-                            <path d="M110,122 C80,114 64,90 66,64 C67,44 78,26 98,14" fill="none" stroke="#b1862f" stroke-width="2.4" stroke-linecap="round"/>
-                            <ellipse cx="102" cy="116" rx="8" ry="2.8" transform="rotate(34 102 116)"/>
-                            <ellipse cx="92" cy="106" rx="8.5" ry="3" transform="rotate(22 92 106)"/>
-                            <ellipse cx="83" cy="95" rx="9" ry="3" transform="rotate(8 83 95)"/>
-                            <ellipse cx="75" cy="82" rx="9" ry="3" transform="rotate(-8 75 82)"/>
-                            <ellipse cx="69" cy="68" rx="8.5" ry="3" transform="rotate(-26 69 68)"/>
-                            <ellipse cx="68" cy="53" rx="8" ry="2.8" transform="rotate(-44 68 53)"/>
-                            <ellipse cx="73" cy="38" rx="7.5" ry="2.6" transform="rotate(-60 73 38)"/>
-                            <ellipse cx="83" cy="25" rx="7" ry="2.4" transform="rotate(-72 83 25)"/>
-                        </g>
-                        <g transform="translate(220,0) scale(-1,1)">
-                            <path d="M110,122 C80,114 64,90 66,64 C67,44 78,26 98,14" fill="none" stroke="#b1862f" stroke-width="2.4" stroke-linecap="round"/>
-                            <ellipse cx="102" cy="116" rx="8" ry="2.8" transform="rotate(34 102 116)"/>
-                            <ellipse cx="92" cy="106" rx="8.5" ry="3" transform="rotate(22 92 106)"/>
-                            <ellipse cx="83" cy="95" rx="9" ry="3" transform="rotate(8 83 95)"/>
-                            <ellipse cx="75" cy="82" rx="9" ry="3" transform="rotate(-8 75 82)"/>
-                            <ellipse cx="69" cy="68" rx="8.5" ry="3" transform="rotate(-26 69 68)"/>
-                            <ellipse cx="68" cy="53" rx="8" ry="2.8" transform="rotate(-44 68 53)"/>
-                            <ellipse cx="73" cy="38" rx="7.5" ry="2.6" transform="rotate(-60 73 38)"/>
-                            <ellipse cx="83" cy="25" rx="7" ry="2.4" transform="rotate(-72 83 25)"/>
-                        </g>
-                    </g>
-                </svg>
-                <div class="laurel-text">
-                    <span class="laurel-top">Winner</span>
-                    <span class="laurel-mid">Best Production Design</span>
-                    <span class="laurel-fest">New Bedford Film Festival</span>
-                    <span class="laurel-year">2025</span>
+
+        <div class="awards-group">
+            <h3 class="awards-group-title">Low Power Mode</h3>
+            <div class="laurels-row">
+                <div class="laurel">
+                    <svg viewBox="0 0 220 130" aria-hidden="true"><use href="#wreath"/></svg>
+                    <div class="laurel-text">
+                        <span class="laurel-top">Winner</span>
+                        <span class="laurel-mid">Best Production Design</span>
+                        <span class="laurel-fest">New Bedford Film Festival</span>
+                        <span class="laurel-year">2025</span>
+                    </div>
+                </div>
+                <div class="laurel">
+                    <svg viewBox="0 0 220 130" aria-hidden="true"><use href="#wreath"/></svg>
+                    <div class="laurel-text">
+                        <span class="laurel-top">Winner</span>
+                        <span class="laurel-mid">Best Comedy</span>
+                        <span class="laurel-fest">ConCarolinas Film Festival</span>
+                        <span class="laurel-year">2025</span>
+                    </div>
+                </div>
+                <div class="laurel">
+                    <svg viewBox="0 0 220 130" aria-hidden="true"><use href="#wreath"/></svg>
+                    <div class="laurel-text">
+                        <span class="laurel-top">Nominee</span>
+                        <span class="laurel-mid">Best Short Film</span>
+                        <span class="laurel-year">2025</span>
+                    </div>
+                </div>
+                <div class="laurel">
+                    <svg viewBox="0 0 220 130" aria-hidden="true"><use href="#wreath"/></svg>
+                    <div class="laurel-text">
+                        <span class="laurel-top">Nominee</span>
+                        <span class="laurel-mid">Best Director</span>
+                        <span class="laurel-year">2025</span>
+                    </div>
+                </div>
+                <div class="laurel">
+                    <svg viewBox="0 0 220 130" aria-hidden="true"><use href="#wreath"/></svg>
+                    <div class="laurel-text">
+                        <span class="laurel-top">Nominee</span>
+                        <span class="laurel-mid">Best Ensemble</span>
+                        <span class="laurel-year">2025</span>
+                    </div>
+                </div>
+                <div class="laurel">
+                    <svg viewBox="0 0 220 130" aria-hidden="true"><use href="#wreath"/></svg>
+                    <div class="laurel-text">
+                        <span class="laurel-top">Nominee</span>
+                        <span class="laurel-mid">Best Original Score</span>
+                        <span class="laurel-year">2025</span>
+                    </div>
+                </div>
+                <div class="laurel">
+                    <svg viewBox="0 0 220 130" aria-hidden="true"><use href="#wreath"/></svg>
+                    <div class="laurel-text">
+                        <span class="laurel-top">Nominee</span>
+                        <span class="laurel-mid">Best Production Design</span>
+                        <span class="laurel-year">2025</span>
+                    </div>
                 </div>
             </div>
-            <div class="laurel">
-                <svg viewBox="0 0 220 130" aria-hidden="true">
-                    <g fill="#b1862f">
-                        <g>
-                            <path d="M110,122 C80,114 64,90 66,64 C67,44 78,26 98,14" fill="none" stroke="#b1862f" stroke-width="2.4" stroke-linecap="round"/>
-                            <ellipse cx="102" cy="116" rx="8" ry="2.8" transform="rotate(34 102 116)"/>
-                            <ellipse cx="92" cy="106" rx="8.5" ry="3" transform="rotate(22 92 106)"/>
-                            <ellipse cx="83" cy="95" rx="9" ry="3" transform="rotate(8 83 95)"/>
-                            <ellipse cx="75" cy="82" rx="9" ry="3" transform="rotate(-8 75 82)"/>
-                            <ellipse cx="69" cy="68" rx="8.5" ry="3" transform="rotate(-26 69 68)"/>
-                            <ellipse cx="68" cy="53" rx="8" ry="2.8" transform="rotate(-44 68 53)"/>
-                            <ellipse cx="73" cy="38" rx="7.5" ry="2.6" transform="rotate(-60 73 38)"/>
-                            <ellipse cx="83" cy="25" rx="7" ry="2.4" transform="rotate(-72 83 25)"/>
-                        </g>
-                        <g transform="translate(220,0) scale(-1,1)">
-                            <path d="M110,122 C80,114 64,90 66,64 C67,44 78,26 98,14" fill="none" stroke="#b1862f" stroke-width="2.4" stroke-linecap="round"/>
-                            <ellipse cx="102" cy="116" rx="8" ry="2.8" transform="rotate(34 102 116)"/>
-                            <ellipse cx="92" cy="106" rx="8.5" ry="3" transform="rotate(22 92 106)"/>
-                            <ellipse cx="83" cy="95" rx="9" ry="3" transform="rotate(8 83 95)"/>
-                            <ellipse cx="75" cy="82" rx="9" ry="3" transform="rotate(-8 75 82)"/>
-                            <ellipse cx="69" cy="68" rx="8.5" ry="3" transform="rotate(-26 69 68)"/>
-                            <ellipse cx="68" cy="53" rx="8" ry="2.8" transform="rotate(-44 68 53)"/>
-                            <ellipse cx="73" cy="38" rx="7.5" ry="2.6" transform="rotate(-60 73 38)"/>
-                            <ellipse cx="83" cy="25" rx="7" ry="2.4" transform="rotate(-72 83 25)"/>
-                        </g>
-                    </g>
-                </svg>
-                <div class="laurel-text">
-                    <span class="laurel-top">Winner</span>
-                    <span class="laurel-mid">Best Comedy</span>
-                    <span class="laurel-fest">ConCarolinas Film Festival</span>
-                    <span class="laurel-year">2025</span>
+        </div>
+
+        <div class="awards-group">
+            <h3 class="awards-group-title">Los Sue&ntilde;os de los Muertos</h3>
+            <div class="laurels-row">
+                <div class="laurel">
+                    <svg viewBox="0 0 220 130" aria-hidden="true"><use href="#wreath"/></svg>
+                    <div class="laurel-text">
+                        <span class="laurel-top">Award Winner</span>
+                        <span class="laurel-mid">World Film Carnival</span>
+                        <span class="laurel-fest">Singapore</span>
+                        <span class="laurel-year">2022</span>
+                    </div>
+                </div>
+                <div class="laurel">
+                    <svg viewBox="0 0 220 130" aria-hidden="true"><use href="#wreath"/></svg>
+                    <div class="laurel-text">
+                        <span class="laurel-top">Semi-Finalist</span>
+                        <span class="laurel-mid">Austrian Filmfestival</span>
+                        <span class="laurel-year">2022</span>
+                    </div>
+                </div>
+                <div class="laurel">
+                    <svg viewBox="0 0 220 130" aria-hidden="true"><use href="#wreath"/></svg>
+                    <div class="laurel-text">
+                        <span class="laurel-top">Honorable Mention</span>
+                        <span class="laurel-mid">ARFF Amsterdam</span>
+                        <span class="laurel-fest">International Film Festival</span>
+                        <span class="laurel-year">2022</span>
+                    </div>
                 </div>
             </div>
         </div>
