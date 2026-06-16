@@ -344,6 +344,85 @@
             font-family: 'Bobby Jones', cursive;
         }
 
+        /* ─── AWARDS / LAURELS ─── */
+        .awards-section {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 30px 48px 20px;
+        }
+        .awards-heading {
+            font-family: 'Bobby Jones', cursive;
+            font-size: 1.7rem;
+            margin-bottom: 4px;
+        }
+        .awards-heading span {
+            background: #ffe0a0;
+            padding: 0 10px;
+            border-radius: 6px;
+        }
+        .awards-sub {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 28px;
+        }
+        .laurels-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+        .laurel {
+            position: relative;
+            width: 290px;
+            height: 135px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: transform 0.25s ease;
+        }
+        .laurel:hover { transform: translateY(-4px) scale(1.03); }
+        .laurel svg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .laurel-text {
+            position: relative;
+            z-index: 1;
+            padding: 0 52px;
+        }
+        .laurel-top {
+            display: block;
+            font-family: 'Bobby Jones', cursive;
+            font-size: 0.62rem;
+            letter-spacing: 0.14em;
+            color: #b1862f;
+            text-transform: uppercase;
+            margin-bottom: 3px;
+        }
+        .laurel-mid {
+            display: block;
+            font-family: 'Bobby Jones', cursive;
+            font-size: 0.95rem;
+            color: #333;
+            line-height: 1.15;
+        }
+        .laurel-fest {
+            display: block;
+            font-size: 0.72rem;
+            color: #666;
+            margin-top: 5px;
+            line-height: 1.3;
+        }
+        .laurel-year {
+            display: block;
+            font-family: 'Bobby Jones', cursive;
+            font-size: 0.66rem;
+            color: #b1862f;
+            margin-top: 4px;
+        }
+
         /* ─── BIO ─── */
         .bio-section {
             max-width: 1280px;
@@ -442,9 +521,10 @@
             .hero-photo { order: -1; }
             .hero-photo img { max-width: 320px; }
             nav { padding: 16px 20px; }
-            .projects-section, .stills-section, .bio-section, .skills-section, .contact-section {
+            .projects-section, .awards-section, .stills-section, .bio-section, .skills-section, .contact-section {
                 padding-left: 24px; padding-right: 24px;
             }
+            .laurels-row { justify-content: center; }
             .project-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
             .stills-grid { grid-template-columns: 1fr; }
             .stills-grid.vert { grid-template-columns: repeat(2, 1fr); }
@@ -511,6 +591,82 @@
                 <img src="https://img.youtube.com/vi/naxk1rqjzkM/maxresdefault.jpg" alt="Directing Showreel">
                 <div class="card-label">Directing Showreel</div>
             </a>
+        </div>
+    </div>
+
+    <!-- AWARDS -->
+    <div class="awards-section">
+        <h2 class="awards-heading"><span>Awards</span></h2>
+        <p class="awards-sub">Low Power Mode</p>
+        <div class="laurels-row">
+            <div class="laurel">
+                <svg viewBox="0 0 220 130" aria-hidden="true">
+                    <g fill="#b1862f">
+                        <g>
+                            <path d="M110,122 C80,114 64,90 66,64 C67,44 78,26 98,14" fill="none" stroke="#b1862f" stroke-width="2.4" stroke-linecap="round"/>
+                            <ellipse cx="102" cy="116" rx="8" ry="2.8" transform="rotate(34 102 116)"/>
+                            <ellipse cx="92" cy="106" rx="8.5" ry="3" transform="rotate(22 92 106)"/>
+                            <ellipse cx="83" cy="95" rx="9" ry="3" transform="rotate(8 83 95)"/>
+                            <ellipse cx="75" cy="82" rx="9" ry="3" transform="rotate(-8 75 82)"/>
+                            <ellipse cx="69" cy="68" rx="8.5" ry="3" transform="rotate(-26 69 68)"/>
+                            <ellipse cx="68" cy="53" rx="8" ry="2.8" transform="rotate(-44 68 53)"/>
+                            <ellipse cx="73" cy="38" rx="7.5" ry="2.6" transform="rotate(-60 73 38)"/>
+                            <ellipse cx="83" cy="25" rx="7" ry="2.4" transform="rotate(-72 83 25)"/>
+                        </g>
+                        <g transform="translate(220,0) scale(-1,1)">
+                            <path d="M110,122 C80,114 64,90 66,64 C67,44 78,26 98,14" fill="none" stroke="#b1862f" stroke-width="2.4" stroke-linecap="round"/>
+                            <ellipse cx="102" cy="116" rx="8" ry="2.8" transform="rotate(34 102 116)"/>
+                            <ellipse cx="92" cy="106" rx="8.5" ry="3" transform="rotate(22 92 106)"/>
+                            <ellipse cx="83" cy="95" rx="9" ry="3" transform="rotate(8 83 95)"/>
+                            <ellipse cx="75" cy="82" rx="9" ry="3" transform="rotate(-8 75 82)"/>
+                            <ellipse cx="69" cy="68" rx="8.5" ry="3" transform="rotate(-26 69 68)"/>
+                            <ellipse cx="68" cy="53" rx="8" ry="2.8" transform="rotate(-44 68 53)"/>
+                            <ellipse cx="73" cy="38" rx="7.5" ry="2.6" transform="rotate(-60 73 38)"/>
+                            <ellipse cx="83" cy="25" rx="7" ry="2.4" transform="rotate(-72 83 25)"/>
+                        </g>
+                    </g>
+                </svg>
+                <div class="laurel-text">
+                    <span class="laurel-top">Winner</span>
+                    <span class="laurel-mid">Best Production Design</span>
+                    <span class="laurel-fest">New Bedford Film Festival</span>
+                    <span class="laurel-year">2025</span>
+                </div>
+            </div>
+            <div class="laurel">
+                <svg viewBox="0 0 220 130" aria-hidden="true">
+                    <g fill="#b1862f">
+                        <g>
+                            <path d="M110,122 C80,114 64,90 66,64 C67,44 78,26 98,14" fill="none" stroke="#b1862f" stroke-width="2.4" stroke-linecap="round"/>
+                            <ellipse cx="102" cy="116" rx="8" ry="2.8" transform="rotate(34 102 116)"/>
+                            <ellipse cx="92" cy="106" rx="8.5" ry="3" transform="rotate(22 92 106)"/>
+                            <ellipse cx="83" cy="95" rx="9" ry="3" transform="rotate(8 83 95)"/>
+                            <ellipse cx="75" cy="82" rx="9" ry="3" transform="rotate(-8 75 82)"/>
+                            <ellipse cx="69" cy="68" rx="8.5" ry="3" transform="rotate(-26 69 68)"/>
+                            <ellipse cx="68" cy="53" rx="8" ry="2.8" transform="rotate(-44 68 53)"/>
+                            <ellipse cx="73" cy="38" rx="7.5" ry="2.6" transform="rotate(-60 73 38)"/>
+                            <ellipse cx="83" cy="25" rx="7" ry="2.4" transform="rotate(-72 83 25)"/>
+                        </g>
+                        <g transform="translate(220,0) scale(-1,1)">
+                            <path d="M110,122 C80,114 64,90 66,64 C67,44 78,26 98,14" fill="none" stroke="#b1862f" stroke-width="2.4" stroke-linecap="round"/>
+                            <ellipse cx="102" cy="116" rx="8" ry="2.8" transform="rotate(34 102 116)"/>
+                            <ellipse cx="92" cy="106" rx="8.5" ry="3" transform="rotate(22 92 106)"/>
+                            <ellipse cx="83" cy="95" rx="9" ry="3" transform="rotate(8 83 95)"/>
+                            <ellipse cx="75" cy="82" rx="9" ry="3" transform="rotate(-8 75 82)"/>
+                            <ellipse cx="69" cy="68" rx="8.5" ry="3" transform="rotate(-26 69 68)"/>
+                            <ellipse cx="68" cy="53" rx="8" ry="2.8" transform="rotate(-44 68 53)"/>
+                            <ellipse cx="73" cy="38" rx="7.5" ry="2.6" transform="rotate(-60 73 38)"/>
+                            <ellipse cx="83" cy="25" rx="7" ry="2.4" transform="rotate(-72 83 25)"/>
+                        </g>
+                    </g>
+                </svg>
+                <div class="laurel-text">
+                    <span class="laurel-top">Winner</span>
+                    <span class="laurel-mid">Best Comedy</span>
+                    <span class="laurel-fest">ConCarolinas Film Festival</span>
+                    <span class="laurel-year">2025</span>
+                </div>
+            </div>
         </div>
     </div>
 
